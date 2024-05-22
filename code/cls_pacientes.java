@@ -13,5 +13,43 @@ public class cls_pacientes{
     this.historiaStr = historiaStr;
   }
 
-  
+  public String getNombreMascotaStr() {
+    return nombreMascotaStr;
+  }
+
+  public void setNombreMascotaStr(String nombreMascotaStr) {
+    this.nombreMascotaStr = nombreMascotaStr;
+  }
+
+  public String getIdStr() {
+    return idStr;
+  }
+
+  public void setIdStr(String idStr) {
+    this.idStr = idStr;
+  }
+
+  public int getEdadInt() {
+    return edadInt;
+  }
+
+  public void setEdadInt(int edadInt) {
+    this.edadInt = edadInt;
+  }
+
+  public String getContactoStr() {
+    return contactoStr;
+  }
+
+  public void setContactoStr(String contactoStr) {
+    this.contactoStr = contactoStr;
+  }
+
+  public String getHistoriaStr() {
+    return historiaStr;
+  }
+
+  public void setHistoriaStr(String historiaStr) {
+    this.historiaStr = historiaStr;
+  }
 }
