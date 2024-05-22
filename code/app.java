@@ -1,6 +1,8 @@
-import javax.swing.JOptionPane;
+import java.util.LinkedList;
 
+import javax.swing.JOptionPane;
 public class app {
+  static LinkedList <cls_pacientes> pacientes = new LinkedList<>();
   public static void main(String[] args) {
     fnt_menuPrincipal(true);
   }
@@ -15,6 +17,9 @@ public class app {
             String id = JOptionPane.showInputDialog(null, "Ingrese el id del paciente: ");
             int edad = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la edad del paciente: "));
             String contacto = JOptionPane.showInputDialog(null, "Ingrese el contacto del paciente: ");
+            String historia = JOptionPane.showInputDialog(null, "Ingrese la historia del paciente: ");
+            pacientes.add(new cls_pacientes(nombre, id, edad, contacto, historia));
+            JOptionPane.showMessageDialog(null,"Paciente registrado con exito");
 }
   }// The backticks (`) in the code snippet you provided are not doing anything. They are simply used as a formatting convention in some Markdown or plain text environments to denote code or code snippets. In this case, the backticks are not affecting the functionality of the Java code.
   
@@ -29,7 +34,7 @@ public class app {
 
             if (opcionesStr.equals("1")){
                 fnt_paciente();
-            }
-        }
+      }
     }
+  }
 }
