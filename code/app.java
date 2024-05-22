@@ -7,7 +7,8 @@ public class app {
     fnt_menuPrincipal(true);
   }
 
-  public static void fnt_paciente(){
+  public static void fnt_paciente(boolean mp){
+    while (mp) {
     String opcionesPacientes = JOptionPane.showInputDialog(null, "MENU PACIENTES\n" +
                 "1. Registrar\n" +
                 "2. Consultar\n" +
@@ -46,7 +47,7 @@ public class app {
               pos = i;
               break;
             }
-            if ( sw == true) {
+            if (sw == true) {
               JOptionPane.showMessageDialog(null, "Nombre: " + pacientes.get(pos).getNombreMascotaStr() + "\n" +
               "Edad: " + pacientes.get(pos).getEdadInt() + "\n" +
               "Contacto: " + pacientes.get(pos).getContactoStr() + "\n" +
@@ -57,6 +58,11 @@ public class app {
             }
           }
         }
+      if (opcionesPacientes.equals("3")) {
+        mp = false;
+      
+        }
+      }
   }// The backticks (`) in the code snippet you provided are not doing anything. They are simply used as a formatting convention in some Markdown or plain text environments to denote code or code snippets. In this case, the backticks are not affecting the functionality of the Java code.
   
 
@@ -69,7 +75,7 @@ public class app {
             "4. Salir");
 
             if (opcionesStr.equals("1")){
-                fnt_paciente();
+                fnt_paciente(true);
       }
     }
   }
